@@ -118,6 +118,53 @@ src: ./pages/01-what-is-slidev.md
 
 This keeps the main file clean and makes it easy to reorder, add, or remove slides.
 
+## Branch Protection and Pull Request Workflow
+
+**This repository enforces branch protection on the `main` branch.**
+
+### What This Means
+
+- Direct pushes to `main` are blocked
+- All changes must go through Pull Requests
+- CI checks (linting, build) must pass before merging
+- Code review may be required (depending on configuration)
+
+### Workflow for Changes
+
+1. **Create a feature branch:**
+   ```bash
+   git checkout -b feature/descriptive-name
+   ```
+
+2. **Make changes and commit:**
+   ```bash
+   git add .
+   git commit -m "Description of changes"
+   ```
+
+3. **Push to the feature branch:**
+   ```bash
+   git push origin feature/descriptive-name
+   ```
+
+4. **Create a Pull Request:**
+   ```bash
+   gh pr create --title "Title" --body "Description"
+   ```
+
+5. **Wait for CI checks and review**
+
+6. **Merge the PR** (via GitHub UI or CLI)
+
+### For Repository Owners
+
+If you need to make quick changes without PR workflow:
+1. Temporarily disable branch protection in repository settings
+2. Make and push changes
+3. Re-enable branch protection
+
+Or use the PR workflow even for your own changes (recommended).
+
 ## Common Tasks
 
 ### Adding New Slides
@@ -269,7 +316,9 @@ my-slidev-project/
 
 1. **NEVER commit or push changes unless explicitly asked to do so by the user.** This is critical - always wait for explicit permission before committing.
 
-2. **For the latest Slidev syntax, always refer to the official guide:** https://sli.dev/guide/syntax - This is the authoritative source for current Slidev markdown features and syntax.
+2. **This repository uses branch protection rules.** Direct pushes to the `main` branch are not allowed. All changes must go through Pull Requests. When the user asks to commit changes, remind them that they'll need to create a PR or temporarily disable branch protection.
+
+3. **For the latest Slidev syntax, always refer to the official guide:** https://sli.dev/guide/syntax - This is the authoritative source for current Slidev markdown features and syntax.
 
 3. **Never remove the `--base` flag** from the build script without updating the deployment configuration.
 
