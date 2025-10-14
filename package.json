@@ -5,12 +5,17 @@
   "scripts": {
     "build": "slidev build --base /gitops/",
     "dev": "__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS='.gitpod.dev' slidev --remote",
-    "export": "slidev export"
+    "export": "slidev export",
+    "lint": "markdownlint slides.md",
+    "lint:fix": "markdownlint --fix slides.md"
   },
   "dependencies": {
     "@slidev/cli": "^52.2.5",
     "@slidev/theme-default": "latest",
     "@slidev/theme-seriph": "latest",
     "vue": "^3.5.22"
+  },
+  "devDependencies": {
+    "markdownlint-cli": "^0.45.0"
   }
 }
