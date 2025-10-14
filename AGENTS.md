@@ -267,29 +267,34 @@ my-slidev-project/
 
 ## Important Notes for Agents
 
-1. **Never remove the `--base` flag** from the build script without updating the deployment configuration.
+1. **NEVER commit or push changes unless explicitly asked to do so by the user.** This is critical - always wait for explicit permission before committing.
 
-2. **The vite.config.js base path alone is not sufficient** - Slidev requires the CLI flag.
+2. **For the latest Slidev syntax, always refer to the official guide:** https://sli.dev/guide/syntax - This is the authoritative source for current Slidev markdown features and syntax.
 
-3. **Always create new slides in separate files** in the `pages/` directory, not in `slides.md`.
+3. **Never remove the `--base` flag** from the build script without updating the deployment configuration.
 
-4. **Use numbered prefixes** for page files (e.g., `01-`, `02-`) to maintain order.
+4. **The vite.config.js base path alone is not sufficient** - Slidev requires the CLI flag.
 
-5. **Reference new slides** in `slides.md` using the `src:` directive.
+5. **Always create new slides in separate files** in the `pages/` directory, not in `slides.md`.
 
-6. **When modifying linting rules**, test locally first with `npm run lint` before pushing.
+6. **Use numbered prefixes** for page files (e.g., `01-`, `02-`) to maintain order.
 
-7. **The dev server configuration is environment-specific** - the Gitpod configuration won't work in other environments without modification.
+7. **Reference new slides** in `slides.md` using the `src:` directive.
 
-8. **GitHub Pages must be configured** to use "GitHub Actions" as the source (not branch-based deployment).
+8. **When modifying linting rules**, test locally first with `npm run lint` before pushing.
 
-9. **Slide separators (`---`) are not markdown horizontal rules** - they're Slidev syntax for slide boundaries.
+9. **The dev server configuration is environment-specific** - the Gitpod configuration won't work in other environments without modification.
 
-10. **Vue components in markdown are intentional** - don't try to "fix" them as HTML errors.
+10. **GitHub Pages must be configured** to use "GitHub Actions" as the source (not branch-based deployment).
+
+11. **Slide separators (`---`) are not markdown horizontal rules** - they're Slidev syntax for slide boundaries.
+
+12. **Vue components in markdown are intentional** - don't try to "fix" them as HTML errors.
 
 ## Resources
 
 - [Slidev Documentation](https://sli.dev/)
+- [Slidev Syntax Guide](https://sli.dev/guide/syntax) - **Official reference for latest Slidev markdown syntax**
 - [Vite Configuration](https://vitejs.dev/config/)
 - [markdownlint Rules](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md)
 - [GitHub Actions for Pages](https://github.com/actions/deploy-pages)
