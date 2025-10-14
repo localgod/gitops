@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "slidev build",
-    "dev": "slidev --open",
+    "dev": "__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS='.gitpod.dev' slidev --remote",
     "export": "slidev export"
   },
   "dependencies": {
