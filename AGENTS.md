@@ -90,28 +90,71 @@ This project uses `markdownlint-cli` with a permissive configuration for Slidev 
 - `pages: write`
 - `id-token: write`
 
+## Project Structure
+
+### Slide Organization
+
+**Important:** This project uses a modular slide structure. Each slide or group of related slides should be in a separate file in the `pages/` directory.
+
+**Main entry point:** `slides.md`
+- Contains the frontmatter configuration (theme, title, etc.)
+- Contains the cover/title slide
+- References all other slides using `src:` directives
+
+**Individual slides:** `pages/*.md`
+- Each file contains one or more related slides
+- Files are numbered for easy ordering (e.g., `01-what-is-slidev.md`, `02-navigation.md`)
+- Referenced from `slides.md` using the `src:` directive
+
+### Slide Reference Syntax
+
+In `slides.md`, reference external slide files like this:
+
+```markdown
+---
+src: ./pages/01-what-is-slidev.md
+---
+```
+
+This keeps the main file clean and makes it easy to reorder, add, or remove slides.
+
 ## Common Tasks
 
 ### Adding New Slides
 
-Edit `slides.md` and use `---` to separate slides:
+**Always create new slides in separate files in the `pages/` directory.**
 
-```markdown
----
-# Slide configuration (optional)
-layout: default
----
+1. **Create a new file** in `pages/` with a descriptive name:
+   ```bash
+   # Use numbered prefix for ordering
+   pages/15-my-new-slide.md
+   ```
 
-# Slide Title
+2. **Add slide content** to the new file:
+   ```markdown
+   ---
+   # Slide configuration (optional)
+   layout: default
+   ---
 
-Content here
+   # Slide Title
 
----
+   Content here
+   ```
 
-# Next Slide
+3. **Reference the new slide** in `slides.md`:
+   ```markdown
+   ---
+   src: ./pages/15-my-new-slide.md
+   ---
+   ```
 
-More content
-```
+**Why separate files?**
+- Easier to manage and navigate
+- Better for version control (smaller diffs)
+- Allows parallel editing by multiple contributors
+- Simplifies reordering slides
+- Makes it easier to reuse slides across presentations
 
 ### Testing Locally in Gitpod
 
@@ -180,18 +223,36 @@ npm run lint:fix
 ```
 my-slidev-project/
 ├── .github/
-│   └── workflows/
-│       └── deploy.yml          # GitHub Actions workflow
-├── components/                 # Vue components
-├── pages/                      # Additional slide pages
-├── snippets/                   # Code snippets
-├── .markdownlint.json         # Markdown linting rules
-├── package.json               # Dependencies and scripts
-├── slides.md                  # Main presentation file
-├── vite.config.js            # Vite configuration
-└── AGENTS.md                 # This file
-
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md      # Bug report template
+│   │   ├── feature_request.md # Feature request template
+│   │   └── config.yml         # Issue template config
+│   ├── workflows/
+│   │   └── deploy.yml         # GitHub Actions workflow
+│   └── PULL_REQUEST_TEMPLATE.md # PR template
+├── components/                # Vue components
+├── pages/                     # Individual slide files (IMPORTANT!)
+│   ├── 01-what-is-slidev.md
+│   ├── 02-navigation.md
+│   ├── 03-table-of-contents.md
+│   ├── ...
+│   └── 14-learn-more.md
+├── snippets/                  # Code snippets
+├── .markdownlint.json        # Markdown linting rules
+├── AGENTS.md                 # This file
+├── CODE_OF_CONDUCT.md        # Code of conduct
+├── CONTRIBUTING.md           # Contribution guidelines
+├── LICENSE                   # MIT License
+├── package.json              # Dependencies and scripts
+├── slides.md                 # Main entry point (references pages/)
+└── vite.config.js           # Vite configuration
 ```
+
+**Key directories:**
+- `pages/` - **All individual slides go here** (numbered for ordering)
+- `components/` - Reusable Vue components
+- `snippets/` - External code snippets
+- `.github/` - GitHub-specific files (workflows, templates)
 
 ## Dependencies
 
@@ -210,15 +271,21 @@ my-slidev-project/
 
 2. **The vite.config.js base path alone is not sufficient** - Slidev requires the CLI flag.
 
-3. **When modifying linting rules**, test locally first with `npm run lint` before pushing.
+3. **Always create new slides in separate files** in the `pages/` directory, not in `slides.md`.
 
-4. **The dev server configuration is environment-specific** - the Gitpod configuration won't work in other environments without modification.
+4. **Use numbered prefixes** for page files (e.g., `01-`, `02-`) to maintain order.
 
-5. **GitHub Pages must be configured** to use "GitHub Actions" as the source (not branch-based deployment).
+5. **Reference new slides** in `slides.md` using the `src:` directive.
 
-6. **Slide separators (`---`) are not markdown horizontal rules** - they're Slidev syntax for slide boundaries.
+6. **When modifying linting rules**, test locally first with `npm run lint` before pushing.
 
-7. **Vue components in markdown are intentional** - don't try to "fix" them as HTML errors.
+7. **The dev server configuration is environment-specific** - the Gitpod configuration won't work in other environments without modification.
+
+8. **GitHub Pages must be configured** to use "GitHub Actions" as the source (not branch-based deployment).
+
+9. **Slide separators (`---`) are not markdown horizontal rules** - they're Slidev syntax for slide boundaries.
+
+10. **Vue components in markdown are intentional** - don't try to "fix" them as HTML errors.
 
 ## Resources
 
