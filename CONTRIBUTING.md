@@ -70,6 +70,8 @@ Use clear, descriptive commit messages:
 
 ## Submitting Changes
 
+**Important:** This repository requires all changes to go through Pull Requests. Direct pushes to the `main` branch are not allowed.
+
 1. **Push to your fork**:
    ```bash
    git push origin feature/your-feature-name
@@ -85,6 +87,7 @@ Use clear, descriptive commit messages:
    - Address any feedback from maintainers
    - Make requested changes in new commits
    - Keep the PR focused on a single topic
+   - Ensure all CI checks pass (linting, build)
 
 ## Code Review Process
 

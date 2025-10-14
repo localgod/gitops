@@ -125,9 +125,16 @@ This project uses markdownlint with a permissive configuration for Slidev compat
 
 ## Deployment
 
-The presentation is automatically deployed to GitHub Pages via GitHub Actions on every push to the `main` branch.
+The presentation is automatically deployed to GitHub Pages via GitHub Actions when Pull Requests are merged to the `main` branch.
 
 **Deployment URL:** https://localgod.github.io/gitops/
+
+### Branch Protection
+
+This repository uses branch protection rules:
+- Direct pushes to `main` are blocked
+- All changes must go through Pull Requests
+- CI checks (linting and build) must pass before merging
 
 ### Manual Deployment
 
@@ -150,6 +157,8 @@ Please also read our [Code of Conduct](./CODE_OF_CONDUCT.md) before contributing
 
 ### Quick Contribution Guide
 
+**Note:** This repository uses branch protection. All changes must go through Pull Requests - direct pushes to `main` are not allowed.
+
 1. Fork the repository
 2. Create a feature branch (`git checkout -b feature/amazing-feature`)
 3. Make your changes in separate page files
@@ -157,6 +166,7 @@ Please also read our [Code of Conduct](./CODE_OF_CONDUCT.md) before contributing
 5. Commit your changes (see [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions)
 6. Push to your branch (`git push origin feature/amazing-feature`)
 7. Open a Pull Request
+8. Wait for CI checks to pass and review approval
 
 ## Technology Stack
 
