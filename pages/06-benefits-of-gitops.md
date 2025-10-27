@@ -1,23 +1,39 @@
-# Benefits of GitOps
+---
+layout: image-background
+background: https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=1920&q=80
+class: text-white
+---
 
-<div grid="~ cols-2 gap-8">
+<div class="backdrop-blur-sm bg-black/60 p-6 rounded-lg text-xs">
+
+# The Real Benefits (And Trade-offs)
+
+<div grid="~ cols-2 gap-6">
 <div>
 
-**Pros:**
-- Strong auditability and traceability
-- Simplified rollback and disaster recovery
-- Improved developer experience
-- Enhanced security via Git-based RBAC
-- Environment consistency across stages
+**Why I Love GitOps:**
+- **Auditability:** Every change in Git history. Compliance audits become trivial.
+- **Rollback:** Git revert is your panic button. Works every time.
+- **Developer Experience:** Developers use Git, not kubectl. Lower barrier.
+- **Security:** Git RBAC = deployment RBAC. No cluster credentials on laptops.
+- **Consistency:** Dev, staging, prod—all defined the same way.
 
 </div>
 <div>
 
-**Cons:**
-- Requires strict discipline in Git hygiene
-- Initial learning curve for teams
-- Tooling complexity (controller setup, secrets management)
-- Limited flexibility for imperative workflows
+**The Honest Downsides:**
+- **Git Discipline Required:** Bad commits = bad deploys. No shortcuts.
+- **Learning Curve:** Teams need to understand declarative thinking.
+- **Tooling Complexity:** Setting up Argo CD or Flux isn't trivial. Secrets management is hard.
+- **Imperative Workflows:** Sometimes you need a one-off command. GitOps fights you.
 
 </div>
+</div>
+
+<div class="mt-4 text-xs opacity-75 text-center">
+
+*Is it worth it? For production systems, absolutely. For quick prototypes? Maybe overkill.*
+
+</div>
+
 </div>

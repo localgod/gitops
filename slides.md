@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://cover.sli.dev
+background: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=1920&q=80
 title: GitOps – A Modern Approach to Continuous Delivery
 info: |
   ## GitOps Presentation
@@ -24,6 +24,14 @@ Solving Operational Challenges with Declarative Infrastructure
     Audience: Enterprise Architects, DevOps Engineers, Platform Teams
   </span>
 </div>
+
+---
+src: ./pages/00-about-author.md
+---
+
+---
+src: ./pages/01-my-journey.md
+---
 
 ---
 src: ./pages/02-what-is-gitops.md

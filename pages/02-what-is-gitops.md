@@ -1,14 +1,30 @@
+---
+layout: image-background
+background: https://images.unsplash.com/photo-1556075798-4825dfaaf498?w=1920&q=80
+class: text-white
+---
+
+<div class="backdrop-blur-sm bg-black/60 p-6 rounded-lg text-sm">
+
 # What is GitOps?
 
-**Definition:**
+**The Simple Version:**
 
-GitOps is a set of practices that uses Git as the single source of truth for declarative infrastructure and application configurations.
+GitOps uses Git as the single source of truth for declarative infrastructure and application configurations. If it's not in Git, it doesn't exist.
 
 <div class="mt-8" />
 
 **Core Principles:**
 
-- **Declarative:** Desired system state is defined in code (e.g., YAML, Helm).
-- **Versioned & Immutable:** Git tracks changes, enabling auditability and rollback.
-- **Automatically Applied:** Changes in Git trigger automated reconciliation in the runtime environment.
-- **Continuously Reconciled:** The system ensures the actual state matches the desired state.
+- **Declarative:** Define what you want, not how to get there. YAML manifests, Helm charts, terraform — declare your desired state.
+- **Versioned & Immutable:** Every change lives in Git history. Need to audit who changed what? Git log. Need to rollback? Git revert.
+- **Automatically Applied:** Push to Git, and automation takes over. No manual kubectl commands in production.
+- **Continuously Reconciled:** The system constantly checks: "Does reality match what's in Git?" If not, it fixes it.
+
+<div class="mt-6 text-sm opacity-75">
+
+*Think of it as infrastructure on autopilot—you set the destination, Git is the map, and the GitOps controller is the driver.*
+
+</div>
+
+</div>
