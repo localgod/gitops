@@ -1,18 +1,33 @@
 ---
-layout: center
-class: text-center
+layout: image-background
+background: https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=1920&q=80
+class: text-white
 ---
 
-# Summary & Key Takeaways
+<div class="flex items-center justify-center h-full">
+<div class="backdrop-blur-sm bg-black/60 p-6 rounded-lg text-center max-w-4xl">
 
-<div class="text-left mx-auto max-w-3xl mt-8">
+# What I've Learned About GitOps
 
-- GitOps is a **declarative, Git-driven** approach to managing infrastructure and applications.
+<div class="text-left mt-4 text-sm">
 
-- It solves **configuration drift, auditability, and deployment fragility**.
+- GitOps is **declarative and Git-driven**—if it's not in Git, it doesn't exist in production.
 
-- Unlike traditional CI/CD, GitOps uses **pull-based reconciliation** and treats Git as the **source of truth**.
+- It solves **real problems**: configuration drift, audit nightmares, and fragile deployments that keep you up at night.
 
-- Adoption requires **cultural and tooling shifts**, but offers **robust operational benefits**.
+- Unlike traditional CI/CD, GitOps uses **pull-based reconciliation**. The cluster pulls from Git, not the other way around.
 
+- Adoption requires **cultural shifts** (trust Git, stop manual changes) and **tooling investment** (Argo CD, Flux, secrets management).
+
+- **Is it worth it?** For production systems with compliance needs and multiple environments—absolutely. For quick prototypes—probably overkill.
+
+</div>
+
+<div class="mt-4 text-sm opacity-75">
+
+*After years of CI/CD evolution, GitOps feels like the natural next step. It's not perfect, but it's the best approach I've found for managing modern infrastructure.*
+
+</div>
+
+</div>
 </div>

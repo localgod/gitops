@@ -1,15 +1,27 @@
+---
+layout: image-background
+background: https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1920&q=80
+class: text-white
+---
+
+<div class="backdrop-blur-sm bg-black/60 p-6 rounded-lg text-xs">
+
 # GitOps vs Traditional CI/CD
 
-| Aspect | Traditional CI/CD | GitOps |
-|--------|-------------------|--------|
-| **Trigger** | Push-based (CI pipeline triggers deployment) | Pull-based (runtime pulls desired state from Git) |
-| **Source of Truth** | CI/CD pipeline config (e.g., Jenkinsfile) | Git repository |
-| **Deployment Logic** | Embedded in pipeline scripts | External controller reconciles state |
-| **Rollback** | Manual or scripted | Git revert triggers automatic rollback |
-| **Observability** | Pipeline-centric | State-centric (actual vs desired state) |
+**How I Used to Deploy vs How I Deploy Now:**
 
-<div class="mt-8" />
+| Aspect | Traditional CI/CD | GitOps | Reality Check |
+|--------|-------------------|--------|---------------|
+| **Trigger** | Push-based | Pull-based | *No deploy anxiety* |
+| **Source of Truth** | Pipeline scripts | Git repository | *One place to look* |
+| **Deployment Logic** | In pipeline scripts | External controller | *Build vs deploy separation* |
+| **Rollback** | Manual or scripted | Git revert | *Just another commit* |
+| **Observability** | Pipeline-centric | State-centric | *Know what's running* |
 
-**Key Differentiator:**
+<div class="mt-4 text-xs opacity-75">
 
-GitOps decouples deployment logic from CI pipelines and shifts control to the runtime environment.
+**The Big Shift:** GitOps decouples deployment logic from CI pipelines. Your CI builds and tests. Your GitOps controller deploys and maintains. Separation of concerns at its finest.
+
+</div>
+
+</div>
