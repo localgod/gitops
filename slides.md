@@ -1,6 +1,6 @@
 ---
 theme: seriph
-background: https://images.unsplash.com/photo-1618401471353-b98afee0b2eb?w=1920&q=80
+background: https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1920&q=80
 title: GitOps – A Modern Approach to Continuous Delivery
 info: |
   ## GitOps Presentation
@@ -47,6 +47,26 @@ src: ./pages/04-gitops-vs-traditional-cicd.md
 
 ---
 src: ./pages/05-gitops-workflow.md
+---
+
+---
+src: ./pages/08-gitops-tools.md
+---
+
+---
+src: ./pages/09-security-considerations.md
+---
+
+---
+src: ./pages/10-migration-strategy.md
+---
+
+---
+src: ./pages/12-anti-patterns.md
+---
+
+---
+src: ./pages/13-measuring-success.md
 ---
 
 ---

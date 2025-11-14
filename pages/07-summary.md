@@ -17,7 +17,7 @@ class: text-white
 
 - Unlike traditional CI/CD, GitOps uses **pull-based reconciliation**. The cluster pulls from Git, not the other way around.
 
-- Adoption requires **cultural shifts** (trust Git, stop manual changes) and **tooling investment** (Argo CD, Flux, secrets management).
+- Adoption requires **cultural shifts** (trust Git, stop manual changes) and **tooling investment** (GitOps controllers, configuration management).
 
 - **Is it worth it?** For production systems with compliance needs and multiple environments—absolutely. For quick prototypes—probably overkill.
 

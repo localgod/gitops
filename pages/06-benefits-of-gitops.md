@@ -15,7 +15,7 @@ class: text-white
 - **Auditability:** Every change in Git history. Compliance audits become trivial.
 - **Rollback:** Git revert is your panic button. Works every time.
 - **Developer Experience:** Developers use Git, not kubectl. Lower barrier.
-- **Security:** Git RBAC = deployment RBAC. No cluster credentials on laptops.
+- **Access Control:** Git RBAC controls who can deploy.
 - **Consistency:** Dev, staging, prod—all defined the same way.
 
 </div>
@@ -24,7 +24,7 @@ class: text-white
 **The Honest Downsides:**
 - **Git Discipline Required:** Bad commits = bad deploys. No shortcuts.
 - **Learning Curve:** Teams need to understand declarative thinking.
-- **Tooling Complexity:** Setting up Argo CD or Flux isn't trivial. Secrets management is hard.
+- **Tooling Complexity:** Setting up GitOps tools isn't trivial. Configuration management takes effort.
 - **Imperative Workflows:** Sometimes you need a one-off command. GitOps fights you.
 
 </div>
