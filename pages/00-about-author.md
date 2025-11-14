@@ -19,8 +19,9 @@ class: text-white
 
 <div class="text-sm mt-2">
 
-**Johannes H. P. Skov Frandsen**  
-
+<!-- markdownlint-disable MD036 -->
+**Johannes H. P. Skov Frandsen**
+<!-- markdownlint-enable MD036 -->
 
 <div class="mt-4" />
 
