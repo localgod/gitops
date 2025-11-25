@@ -30,7 +30,19 @@ src: ./pages/00-about-author.md
 ---
 
 ---
-src: ./pages/01-my-journey.md
+src: ./pages/00-about-author-2.md
+---
+
+---
+src: ./pages/01-01-my-journey.md
+---
+
+---
+src: ./pages/01-02-my-journey.md
+---
+
+---
+src: ./pages/01-03-my-journey.md
 ---
 
 ---
@@ -47,6 +59,13 @@ src: ./pages/04-gitops-vs-traditional-cicd.md
 
 ---
 src: ./pages/05-gitops-workflow.md
+---
+---
+src: ./pages/11-code-vs-config-repo.md
+---
+
+---
+src: ./pages/06-benefits-of-gitops.md
 ---
 
 ---
@@ -67,10 +86,6 @@ src: ./pages/12-anti-patterns.md
 
 ---
 src: ./pages/13-measuring-success.md
----
-
----
-src: ./pages/06-benefits-of-gitops.md
 ---
 
 ---

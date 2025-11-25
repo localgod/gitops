@@ -14,6 +14,9 @@ class: text-white
 - **Git access controls deployment** – RBAC in Git = RBAC in production
 - **Audit trail built-in** – Git history tracks all changes
 
+- **Git access implies production access (system)** – In a GitOps model, the ability to update the repo (especially write access to protected branches) effectively lets you change production state. This is system-level access (not direct access to production data), so treat Git permissions as production permissions: use least-privilege, enforce branch protections, and require PR reviews for changes that affect production.
+- **SCM is a production dependency** – Your source control service (GitHub/GitLab/Bitbucket/etc.) becomes part of your production control plane. If the SCM is unavailable or compromised, you may be unable to update or roll back production. Plan for availability, backups, audit logging, and an emergency runbook for out-of-band changes.
+
 <div class="mt-4 text-xs opacity-75">
 
 *GitOps provides good auditability. Handle sensitive data appropriately.*

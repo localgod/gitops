@@ -10,7 +10,7 @@ class: text-white
 
 **Start small, expand gradually:**
 
-- **Proof of Concept** – One non-critical app in dev/staging with Argo CD + Terraform
+- **Proof of Concept** – One non-critical app in dev/staging using Argo CD for application delivery; deploy to infrastructure managed by your existing IaC tooling
 - **Expand Scope** – Add more apps, establish patterns, train team
 - **Production Rollout** – Start with low-risk workloads, run parallel initially
 - **Optimize** – Refine structure, improve based on feedback
