@@ -10,7 +10,7 @@ class: text-white
 
 **Common Mistakes:**
 
-- **Manual terraform apply in prod** – Bypasses Git, creates drift
+- **Manual infra changes in prod** – Bypasses Git, creates drift
 - **Plaintext secrets in Git** – Compliance risk
 - **No PR reviews** – Bad configs go straight to prod
 - **Ignoring drift detection** – Reality diverges from Git

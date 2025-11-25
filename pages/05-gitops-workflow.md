@@ -9,10 +9,10 @@ class: text-white
 # How GitOps Actually Works (Day-to-Day)
 
 **1. Developer Workflow (What You Do):**
-- Update Terraform configs, manifests, or configuration files
+- Update manifests or application configuration files (application changes). Infrastructure changes are managed separately via your IaC tooling.
 - Commit and push to Git
 - Open a PR, get it reviewed, merge it
-- *That's it. No kubectl apply, no terraform apply in production, no manual deployments.*
+- *That's it. No kubectl apply, no manual infra apply in production, no manual deployments.*
 
 <div class="mt-3" />
 

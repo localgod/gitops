@@ -21,12 +21,12 @@ class: text-white
 
 **Supporting Tools:**
 
-- **Terraform / Helm / Kustomize** – Infrastructure as code and configuration management
+- **Helm / Kustomize** – Configuration management for applications (infrastructure is handled with separate IaC tooling)
 - **Crossplane** – Kubernetes-native infrastructure provisioning
 
 <div class="mt-4 text-xs opacity-75">
 
-*I'm exploring Argo CD with Terraform. The combination is powerful for managing both infrastructure and applications.*
+*I'm exploring Argo CD alongside existing IaC tooling. Argo CD focuses on application delivery while IaC tools manage infrastructure.*
 
 </div>
 
