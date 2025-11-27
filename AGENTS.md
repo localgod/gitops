@@ -118,90 +118,15 @@ src: ./pages/01-what-is-slidev.md
 
 This keeps the main file clean and makes it easy to reorder, add, or remove slides.
 
-## Branch Protection and Pull Request Workflow
+## Contribution Workflow
 
-**This repository enforces branch protection on the `main` branch.**
-
-### What This Means
-
-- Direct pushes to `main` are blocked
-- All changes must go through Pull Requests
-- CI checks (linting, build) must pass before merging
-- Code review may be required (depending on configuration)
-
-### Workflow for Changes
-
-1. **Create a feature branch:**
-   ```bash
-   git checkout -b feature/descriptive-name
-   ```
-
-2. **Make changes and commit:**
-   ```bash
-   git add .
-   git commit -m "Description of changes"
-   ```
-
-3. **Push to the feature branch:**
-   ```bash
-   git push origin feature/descriptive-name
-   ```
-
-4. **Create a Pull Request:**
-   ```bash
-   gh pr create --title "Title" --body "Description"
-   ```
-
-5. **Wait for CI checks and review**
-
-6. **Merge the PR** (via GitHub UI or CLI)
-
-### For Repository Owners
-
-If you need to make quick changes without PR workflow:
-1. Temporarily disable branch protection in repository settings
-2. Make and push changes
-3. Re-enable branch protection
-
-Or use the PR workflow even for your own changes (recommended).
+Contributor workflow, branch protection rules, and the Pull Request process are documented in `CONTRIBUTING.md`. Contributors should follow `CONTRIBUTING.md` for branching, commit messages, and PR guidance.
 
 ## Common Tasks
 
 ### Adding New Slides
 
-**Always create new slides in separate files in the `pages/` directory.**
-
-1. **Create a new file** in `pages/` with a descriptive name:
-   ```bash
-   # Use numbered prefix for ordering
-   pages/15-my-new-slide.md
-   ```
-
-2. **Add slide content** to the new file:
-   ```markdown
-   ---
-   # Slide configuration (optional)
-   layout: default
-   ---
-
-   # Slide Title
-
-   Content here
-   ```
-
-3. **Reference the new slide** in `slides.md`:
-   ```markdown
-   ---
-   src: ./pages/15-my-new-slide.md
-   ---
-   ```
-
-**Why separate files?**
-- Easier to manage and navigate
-- Better for version control (smaller diffs)
-- Allows parallel editing by multiple contributors
-- Simplifies reordering slides
-- Makes it easier to reuse slides across presentations
+Slide authoring and file-organization best practices are maintained in `CONTRIBUTING.md`. Contributors and agents should consult `CONTRIBUTING.md` for naming, numbering, and slide-review guidance.
 
 ### Testing Locally in Gitpod
 
@@ -253,18 +178,6 @@ npm run lint:fix
 "dev": "__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS='.gitpod.dev' slidev --remote"
 ```
 
-### Linting Fails in CI
-
-**Symptom:** GitHub Actions workflow fails at the "Lint markdown" step.
-
-**Cause:** Markdown doesn't conform to the configured rules.
-
-**Solution:** 
-1. Run `npm run lint` locally to see errors
-2. Run `npm run lint:fix` to auto-fix where possible
-3. Manually fix remaining issues
-4. Consider disabling problematic rules in `.markdownlint.json` if they conflict with Slidev syntax
-
 ## File Structure
 
 ```
@@ -297,8 +210,6 @@ my-slidev-project/
 
 **Key directories:**
 - `pages/` - **All individual slides go here** (numbered for ordering)
-- `components/` - Reusable Vue components
-- `snippets/` - External code snippets
 - `.github/` - GitHub-specific files (workflows, templates)
 
 ## Dependencies

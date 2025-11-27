@@ -7,9 +7,10 @@ class: text-white
 <div class="flex items-center justify-center h-full">
 <div class="backdrop-blur-sm bg-black/60 p-6 rounded-lg text-center max-w-4xl">
 
-# What I've Learned About GitOps
+# What We've Learned About GitOps
 
 <div class="text-left mt-4 text-sm">
+
 
 - GitOps is **declarative and Git-driven**—if it's not in Git, it doesn't exist in production.
 
@@ -25,7 +26,7 @@ class: text-white
 
 <div class="mt-4 text-sm opacity-75">
 
-*After years of CI/CD evolution, GitOps feels like the natural next step. It's not perfect, but it's the best approach I've found for managing modern infrastructure.*
+*After years of CI/CD evolution, GitOps feels like the natural next step. It's not perfect, but it's the best approach we've found for managing modern infrastructure.*
 
 </div>
 

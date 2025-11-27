@@ -10,7 +10,7 @@ class: text-white
 
 **Real Operational Pain Points:**
 
-| Challenge | GitOps Solution | My Take |
+| Challenge | GitOps Solution | Our Take |
 |----------|------------------|---------|
 | Manual configuration drift | Continuous reconciliation from Git | *No more "it works on my machine"* |
 | Lack of audit trails | Git history provides full traceability | *Git blame for compliance* |

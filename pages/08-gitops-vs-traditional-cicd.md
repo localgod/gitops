@@ -8,7 +8,7 @@ class: text-white
 
 # GitOps vs Traditional CI/CD
 
-**How I Used to Deploy vs How I Deploy Now:**
+**How We Used to Deploy vs How We Deploy Now:**
 
 | Aspect | Traditional CI/CD | GitOps | Reality Check |
 |--------|-------------------|--------|---------------|

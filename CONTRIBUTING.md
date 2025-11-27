@@ -67,7 +67,43 @@ Use clear, descriptive commit messages:
 - Test that images and links work
 - Ensure code examples are correct and properly formatted
 - Follow the existing slide structure and style
+ - Follow the existing slide structure and style
 
+### Adding New Slides
+
+All slides should be created as separate files in the `pages/` directory. Follow these steps when adding a slide:
+
+1. **Create a new file** with a numbered prefix for ordering, for example:
+   ```bash
+   pages/15-my-new-slide.md
+   ```
+
+2. **Add slide content** using Slidev markdown syntax:
+   ```markdown
+   ---
+   # Slide configuration (optional)
+   layout: default
+   ---
+
+   # Slide Title
+
+   Content here
+   ```
+
+3. **Reference the new slide** in `slides.md` with a `src:` directive:
+   ```markdown
+   ---
+   src: ./pages/15-my-new-slide.md
+   ---
+   ```
+
+Why separate files?
+- Easier to manage and review small diffs
+- Allows parallel editing
+- Simplifies reordering slides
+- Encourages focused changes for PRs
+
+For technical configuration, dev-server nuances (e.g., Gitpod host settings), and agent-specific operational rules, see `AGENTS.md`.
 ## Submitting Changes
 
 **Important:** This repository requires all changes to go through Pull Requests. Direct pushes to the `main` branch are not allowed.

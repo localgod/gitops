@@ -10,13 +10,13 @@ class: text-white
 
 <v-click>
 
-**I've tried many other IaC and CI/CD tools...**
+**We've tried many other IaC and CI/CD tools...**
 
 </v-click>
 
 <v-click>
 
-**...but the ones mentioned have had the biggest impact on me.**
+**...but the ones mentioned have had the biggest impact on us.**
 
 </v-click>
 
@@ -32,7 +32,7 @@ class: text-white
 
 <div class="mt-8 text-center opacity-75">
 
-Eeach tool taught me something valuable about automation, declarative systems, and the benefits of treating infrastructure as code.
+Each tool taught us something valuable about automation, declarative systems, and the benefits of treating infrastructure as code.
 
 </div>
 
