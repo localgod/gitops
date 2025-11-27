@@ -10,7 +10,7 @@ class: text-white
 
 **The Main Players:**
 
-| Tool | Type | What I Know | Best For |
+| Tool | Type | What We Know | Best For |
 |------|------|-------------|----------|
 | **Argo CD** | Pull-based GitOps | *Kubernetes-native, great UI, active community* | Teams wanting visibility & control |
 | **Flux CD** | Pull-based GitOps | *Lightweight, CNCF graduated, GitOps Toolkit approach* | Cloud-native purists |
@@ -26,7 +26,7 @@ class: text-white
 
 <div class="mt-4 text-xs opacity-75">
 
-*I'm exploring Argo CD alongside existing IaC tooling. Argo CD focuses on application delivery while IaC tools manage infrastructure.*
+*We're exploring Argo CD alongside existing IaC tooling. Argo CD focuses on application delivery while IaC tools manage infrastructure.*
 
 </div>
 

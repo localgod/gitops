@@ -11,7 +11,7 @@ class: text-white
 <div grid="~ cols-2 gap-6">
 <div>
 
-**Why I Love GitOps:**
+**Why We Love GitOps:**
 - **Auditability:** Every change in Git history. Compliance audits become trivial.
 - **Rollback:** Git revert is your panic button. Works every time.
 - **Developer Experience:** Developers use Git, not kubectl. Lower barrier.

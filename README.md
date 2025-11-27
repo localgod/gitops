@@ -30,17 +30,28 @@ This presentation explores GitOps as a modern approach to continuous delivery, a
 
 **Target Audience:** Enterprise Architects, DevOps Engineers, Platform Teams
 
+**Presenters:** Johannes H. P. Skov Frandsen and Agata Przybyszewska
+
 ## Presentation Content
 
-The presentation consists of 7 slides:
+This slidedeck covers GitOps from background and motivation through practical guidance and lessons learned. Slides are organized into short, focused pages — key topics include:
 
-1. **Title Slide** - Introduction and audience context
-2. **What is GitOps?** - Definition and core principles
-3. **Problem GitOps Solves** - Operational challenges and solutions
-4. **GitOps vs Traditional CI/CD** - Comparative analysis
-5. **GitOps Workflow Overview** - Implementation workflow
-6. **Benefits of GitOps** - Pros and cons analysis
-7. **Summary & Key Takeaways** - Conclusion and main points
+-- **About the Authors:** Author bio and speaker information (`00-00-about-authors.md`).
+-- **Interactive Discussions:** Two short pair-discussion prompts to engage the audience (`01-00-pair-discuss-ci-cd.md`, `02-00-pair-discuss-testing.md`).
+-- **Our Journey:** Practical context and historical perspective on CI/CD and IaC tools (`03-01-01-my-journey.md`, `04-01-02-my-journey.md`, `05-01-03-my-journey.md`).
+-- **Core Concepts:** What GitOps is and its core principles (`06-02-what-is-gitops.md`).
+-- **Problems Solved:** Real operational pain points GitOps addresses (`07-03-problem-gitops-solves.md`).
+-- **Comparisons:** GitOps vs traditional CI/CD approaches (`08-04-gitops-vs-traditional-cicd.md`).
+-- **Workflow & Day-to-Day:** How GitOps works in practice and the developer/controller feedback loop (`09-05-gitops-workflow.md`).
+-- **Code vs Config:** The repository patterns and trade-offs (`10-11-code-vs-config-repo.md`).
+-- **Benefits & Trade-offs:** Practical pros and cons to consider when adopting GitOps (`11-06-benefits-of-gitops.md`).
+-- **Tools & Patterns:** Overview of popular GitOps tools (`12-08-gitops-tools.md`).
+-- **Security & Governance:** Secrets handling, SCM as a control plane, and access implications (`13-09-security-considerations.md`).
+-- **Migration & Anti-Patterns:** Practical migration strategy and common pitfalls to avoid (`14-10-migration-strategy.md`, `15-12-anti-patterns.md`).
+-- **Measuring Success:** Metrics and indicators to track adoption impact (`16-13-measuring-success.md`).
+-- **Summary:** Key takeaways and recommendations (`17-07-summary.md`).
+
+Each slide is intentionally concise; to add or reorder slides, create separate files under the `pages/` directory and reference them from `slides.md` (see `CONTRIBUTING.md` for authoring and contribution guidelines).
 
 ## Getting Started
 
@@ -89,18 +100,8 @@ The presentation will be available at the URL shown in the terminal (not localho
 
 ### Adding New Slides
 
-All slides should be created as separate files in the `pages/` directory:
-
-1. Create a new file: `pages/08-new-slide.md`
-2. Add your content using Slidev markdown syntax
-3. Reference it in `slides.md`:
-   ```markdown
-   ---
-   src: ./pages/08-new-slide.md
-   ---
-   ```
-
-For detailed guidelines, see [AGENTS.md](./AGENTS.md).
+All slide authoring and file-organization guidelines live in `CONTRIBUTING.md`.
+See `CONTRIBUTING.md` for guidance on adding new slides, naming, and review process.
 
 ### Available Commands
 
@@ -131,10 +132,7 @@ The presentation is automatically deployed to GitHub Pages via GitHub Actions wh
 
 ### Branch Protection
 
-This repository uses branch protection rules:
-- Direct pushes to `main` are blocked
-- All changes must go through Pull Requests
-- CI checks (linting and build) must pass before merging
+This repository uses branch protection. See `CONTRIBUTING.md` for full details on branch rules and the pull request process.
 
 ### Manual Deployment
 
@@ -155,18 +153,7 @@ We welcome contributions! Please see our [Contributing Guidelines](./CONTRIBUTIN
 
 Please also read our [Code of Conduct](./CODE_OF_CONDUCT.md) before contributing.
 
-### Quick Contribution Guide
-
-**Note:** This repository uses branch protection. All changes must go through Pull Requests - direct pushes to `main` are not allowed.
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Make your changes in separate page files
-4. Run linting (`npm run lint`)
-5. Commit your changes (see [CONTRIBUTING.md](./CONTRIBUTING.md) for commit conventions)
-6. Push to your branch (`git push origin feature/amazing-feature`)
-7. Open a Pull Request
-8. Wait for CI checks to pass and review approval
+See `CONTRIBUTING.md` for step-by-step contribution and pull request guidance.
 
 ## Technology Stack
 
