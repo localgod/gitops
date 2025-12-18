@@ -61,7 +61,6 @@ src: ./pages/07-gitops-vs-traditional-cicd.md
 src: ./pages/08-gitops-workflow.md
 ---
 
-
 ---
 src: ./pages/09-code-vs-config-repo.md
 ---
