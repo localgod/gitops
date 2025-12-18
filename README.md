@@ -36,20 +36,20 @@ This presentation explores GitOps as a modern approach to continuous delivery, a
 
 This slidedeck covers GitOps from background and motivation through practical guidance and lessons learned. Slides are organized into short, focused pages — key topics include:
 
--- **About the Authors:** Author bio and speaker information (`00-00-about-authors.md`).
--- **Interactive Discussions:** Two short pair-discussion prompts to engage the audience (`01-00-pair-discuss-ci-cd.md`, `02-00-pair-discuss-testing.md`).
--- **Our Journey:** Practical context and historical perspective on CI/CD and IaC tools (`03-01-01-my-journey.md`, `04-01-02-my-journey.md`, `05-01-03-my-journey.md`).
--- **Core Concepts:** What GitOps is and its core principles (`06-02-what-is-gitops.md`).
--- **Problems Solved:** Real operational pain points GitOps addresses (`07-03-problem-gitops-solves.md`).
--- **Comparisons:** GitOps vs traditional CI/CD approaches (`08-04-gitops-vs-traditional-cicd.md`).
--- **Workflow & Day-to-Day:** How GitOps works in practice and the developer/controller feedback loop (`09-05-gitops-workflow.md`).
--- **Code vs Config:** The repository patterns and trade-offs (`10-11-code-vs-config-repo.md`).
--- **Benefits & Trade-offs:** Practical pros and cons to consider when adopting GitOps (`11-06-benefits-of-gitops.md`).
--- **Tools & Patterns:** Overview of popular GitOps tools (`12-08-gitops-tools.md`).
--- **Security & Governance:** Secrets handling, SCM as a control plane, and access implications (`13-09-security-considerations.md`).
--- **Migration & Anti-Patterns:** Practical migration strategy and common pitfalls to avoid (`14-10-migration-strategy.md`, `15-12-anti-patterns.md`).
--- **Measuring Success:** Metrics and indicators to track adoption impact (`16-13-measuring-success.md`).
--- **Summary:** Key takeaways and recommendations (`17-07-summary.md`).
+- **About the Authors:** Author bio and speaker information (`00-00-about-authors.md`).
+- **Interactive Discussions:** Two short pair-discussion prompts to engage the audience (`01-00-pair-discuss-ci-cd.md`, `02-00-pair-discuss-testing.md`).
+- **Our Journey:** Practical context and historical perspective on CI/CD and IaC tools (`03-01-01-my-journey.md`, `04-01-02-my-journey.md`, `05-01-03-my-journey.md`).
+- **Core Concepts:** What GitOps is and its core principles (`06-02-what-is-gitops.md`).
+- **Problems Solved:** Real operational pain points GitOps addresses (`07-03-problem-gitops-solves.md`).
+- **Comparisons:** GitOps vs traditional CI/CD approaches (`08-04-gitops-vs-traditional-cicd.md`).
+- **Workflow & Day-to-Day:** How GitOps works in practice and the developer/controller feedback loop (`09-05-gitops-workflow.md`).
+- **Code vs Config:** The repository patterns and trade-offs (`10-11-code-vs-config-repo.md`).
+- **Benefits & Trade-offs:** Practical pros and cons to consider when adopting GitOps (`11-06-benefits-of-gitops.md`).
+- **Tools & Patterns:** Overview of popular GitOps tools (`12-08-gitops-tools.md`).
+- **Security & Governance:** Secrets handling, SCM as a control plane, and access implications (`13-09-security-considerations.md`).
+- **Migration & Anti-Patterns:** Practical migration strategy and common pitfalls to avoid (`14-10-migration-strategy.md`, `15-12-anti-patterns.md`).
+- **Measuring Success:** Metrics and indicators to track adoption impact (`16-13-measuring-success.md`).
+- **Summary:** Key takeaways and recommendations (`17-07-summary.md`).
 
 Each slide is intentionally concise; to add or reorder slides, create separate files under the `pages/` directory and reference them from `slides.md` (see `CONTRIBUTING.md` for authoring and contribution guidelines).
 
