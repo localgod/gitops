@@ -11,29 +11,25 @@ class: text-white
 <div grid="~ cols-2 gap-6">
 <div>
 
-**Why We Love GitOps:**
+**The Good:**
 - **Auditability:** Every change in Git history. Compliance audits become trivial.
-- **Rollback:** Git revert is your panic button. Works every time.
-- **Developer Experience:** Developers use Git, not kubectl. Lower barrier.
+- **Rollback:** Git revert is your panic button.
+- **Developer Experience:** Developers use Git anyway.
 - **Access Control:** Git RBAC controls who can deploy.
 - **Consistency:** Dev, staging, prod—all defined the same way.
 
 </div>
 <div>
 
-**The Honest Downsides:**
-- **Git Discipline Required:** Bad commits = bad deploys. No shortcuts.
+**The Bad:**
+- **Git Discipline Required:** Bad commits = bad deploys
 - **Learning Curve:** Teams need to understand declarative thinking.
-- **Tooling Complexity:** Setting up GitOps tools isn't trivial. Configuration management takes effort.
-- **Imperative Workflows:** Sometimes you need a one-off command. GitOps fights you.
+- **Tooling Complexity:** Setting up GitOps tools isn't trivial.
+- **Imperative Workflows:** Sometimes you just want to mess with production. GitOps fights you.
 
 </div>
 </div>
 
-<div class="mt-4 text-xs opacity-75 text-center">
 
-*Is it worth it? For production systems, absolutely. For quick prototypes? Maybe overkill.*
-
-</div>
 
 </div>
