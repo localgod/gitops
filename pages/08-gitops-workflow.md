@@ -6,13 +6,14 @@ class: text-white
 
 <div class="backdrop-blur-sm bg-black/60 p-6 rounded-lg text-xs">
 
-# How GitOps Actually Works (Day-to-Day)
+# How GitOps Actually Works
+
+<div class="mt-3" />
 
 **1. Developer Workflow (What You Do):**
 - Update manifests or application configuration files (application changes). Infrastructure changes are managed separately via your IaC tooling.
 - Commit and push to Git
 - Open a PR, get it reviewed, merge it
-- *That's it. No kubectl apply, no manual infra apply in production, no manual deployments.*
 
 <div class="mt-3" />
 
@@ -20,7 +21,6 @@ class: text-white
 - Watches your Git repo like a hawk
 - Detects changes and applies them to the cluster
 - Continuously monitors for drift (manual changes get reverted)
-- *A robot that enforces "Git is the truth"*
 
 <div class="mt-3" />
 
@@ -28,6 +28,5 @@ class: text-white
 - Status updates in Git (commit status, PR comments)
 - Dashboards showing actual vs desired state
 - Alerts when something diverges or fails
-- *No more guessing if your deploy succeeded*
 
 </div>

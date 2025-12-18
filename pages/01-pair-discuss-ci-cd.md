@@ -6,15 +6,13 @@ class: text-white
 
 <div class="backdrop-blur-sm bg-black/60 p-6 rounded-lg text-sm text-center">
 
-# Quick Pair Discussion — 2 minutes
+# Clouse your eyes...
 
-Please turn to the person next to you and take 2 minutes to discuss:
+Think of a production deployment that went really bad
 
-- How do you see CI/CD working in your team today?
-- What's the biggest pain or friction you encounter?
-- Where do you think GitOps could help (or not)?
+Was missing testing a part of it?
 
-We'll collect a few short answers after the timer.
+Now open your eyes, and sort your table ascending according to blast radius.
 
 <!-- Optional speaker note: Start a 2-minute timer, then ask for 2 quick volunteers to share takeaways. -->
 

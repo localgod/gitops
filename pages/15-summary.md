@@ -20,8 +20,6 @@ class: text-white
 
 - Adoption requires **cultural shifts** (trust Git, stop manual changes) and **tooling investment** (GitOps controllers, configuration management).
 
-- **Is it worth it?** For production systems with compliance needs and multiple environments—absolutely. For quick prototypes—probably overkill.
-
 </div>
 
 <div class="mt-4 text-sm opacity-75">

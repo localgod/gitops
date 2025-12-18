@@ -8,7 +8,7 @@ class: text-white
 
 # Measuring Success
 
-**Key Improvements with GitOps:**
+**Use classic DORA metrics:**
 
 - **Deployment Frequency** – Weekly → Multiple per day
 - **Lead Time** – Days → Hours
