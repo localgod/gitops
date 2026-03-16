@@ -90,7 +90,7 @@ jobs:
           echo "Next version: $NEW_VERSION"
 
       - name: Update Release Draft and Publish
-        uses: release-drafter/release-drafter@v6
+        uses: release-drafter/release-drafter@v7
         with:
           publish: true
           tag: ${{ steps.version.outputs.new_version }}
