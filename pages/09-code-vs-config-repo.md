@@ -1,8 +1,7 @@
 ---
 layout: default
+class: p-6 text-sm
 ---
-
-<div class="p-6 text-sm">
 
 # Code repo vs Configuration (config) repo
 
@@ -13,6 +12,7 @@ layout: default
 - Argo CD: continuously watches the config repo and applies the desired state to the cluster.
 
 <div style="transform:scale(0.80); transform-origin:0 0;">
+
 ```mermaid
 sequenceDiagram
     participant Dev as Dev
@@ -31,8 +31,7 @@ sequenceDiagram
     Argo->>K8s: reconcile (deploy/update)
 
 ```
+
 </div>
 
 > *Speaker notes:* Emphasize separation of concerns — app authors work in the app repo; environment-specific configuration lives in the config repo. Benefits: auditability, easy rollbacks, and automated promotions.
-
-</div>
